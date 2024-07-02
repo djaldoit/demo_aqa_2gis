@@ -26,7 +26,7 @@ class AvatarPage:
     @allure.step('Upload avatar')
     def upload_avatar(self):
         browser.element('//input[@id="avatar-uploader"]').send_keys(os.path.abspath(
-            os.path.abspath(os.path.join(os.getcwd(), f'./pictures/{random.choice(["avatar.jpg", "avatar2.jpg"])}'))))
+            os.path.abspath(os.path.join(os.getcwd(), f'/pictures/{random.choice(["avatar.jpg", "avatar2.jpg"])}'))))
         return self
 
     @allure.step('Save settings')
