@@ -8,12 +8,12 @@ from selene import browser
 from selenium.webdriver.chrome.options import Options
 from utils import attachments
 
-DEFAULT_BROWSER_VERSION = "100.0"
+DEFAULT_BROWSER_VERSION = "122.0"
 
 
 def pytest_addoption(parser):
     parser.addoption(
-        '--browser_version', default='100.0')
+        '--browser_version', default='122.0')
 
 
 @pytest.fixture(scope='session', autouse=True)
