@@ -1,5 +1,6 @@
 import allure
 from selene import browser, have, be
+from selene.support.conditions.be import visible
 
 from data import Urls
 
@@ -17,7 +18,7 @@ class RoutePage:
 
     @allure.step('Finding route')
     def finding_route(self):
-        browser.element('//span[text()="Проехать"]').click()
+        browser.element('//span[text()="Проехать"]').assure(visible, timeout=15).click()
         return self
 
     @allure.step('Checking route')
