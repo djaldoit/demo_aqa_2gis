@@ -12,7 +12,7 @@ class RoutePage:
 
     @allure.step('Searching for route')
     def searching_for_route(self):
-        browser.element('//input[@placeholder="Поиск в 2ГИС"]').click().press_enter()
+        browser.element('//input[@placeholder="Поиск в 2ГИС"]').type('Московский Кремль').press_enter()
         browser.element('//span[@class="_1al0wlf"]').click()
 
     @allure.step('Finding route')
