@@ -4,7 +4,8 @@ from pages.log_in_page import LogInPage
 
 
 @pytest.mark.order(1)
-@allure.title('Checking account log in')
+@allure.suite('Вход в аккаунт')
+@allure.title('Проверка входа в аккаунт')
 def test_checking_account_log_in():
     page = LogInPage()
     page.browser_open()
