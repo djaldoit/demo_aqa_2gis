@@ -1,5 +1,5 @@
 <p align="left">
-  <a href="https://demoblaze.com">
+  <a href="https://2gis.ru">
   <picture>
 <img alt="2gis" src="https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-znachok-dva-gis-na-prozrachnom-fone-10.png" width="600" height="150">
     </picture>
@@ -20,7 +20,7 @@
 > Для локального запуска с дефолтными значениями необходимо выполнить команду:
 ### 1. Склонировать репозиторий
 ```
-git clone https://github.com/lrayne/demoblaze-tests.git
+git clone https://github.com/djaldoit/demo_aqa_2gis.git
 ```
 ### 2. Запуск
 ```
@@ -69,6 +69,6 @@ pytest tests
 
 <details><summary>Пример видео отчета о прохождении ui-теста</summary>
   
-<video src='resources/route_video.mp4' width=180/>
+![This is an image](resources/fovorite_video_gif.gif)
 </details>
 
