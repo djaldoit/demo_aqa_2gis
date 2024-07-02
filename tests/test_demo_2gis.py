@@ -9,6 +9,15 @@ from pages.route_page import RoutePage
 
 
 class TestDemo2Gis:
+    @allure.title('Checking route')
+    def test_route(self):
+        route_page = RoutePage()
+        time.sleep(3)
+        route_page.searching_for_route()
+        route_page.finding_route()
+        route_page.checking_route()
+        route_page.checking_distance()
+
     @allure.title('Checking account log in')
     def test_checking_account_log_in(self):
         log_in_page = LogInPage()
@@ -37,11 +46,3 @@ class TestDemo2Gis:
         avatar_page.upload_avatar()
         avatar_page.save_avatar()
 
-    @allure.title('Checking route')
-    def test_route(self):
-        route_page = RoutePage()
-        time.sleep(3)
-        route_page.searching_for_route()
-        route_page.finding_route()
-        route_page.checking_route()
-        route_page.checking_distance()
