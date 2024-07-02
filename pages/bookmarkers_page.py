@@ -13,7 +13,6 @@ class BookmarkersPage:
     @allure.step('Searching for bookmarks')
     def adding_to_bookmarks(self):
         browser.element('//input[@placeholder="Поиск в 2ГИС"]').type('Московский Кремль').press_enter()
-        browser.element('//span[@class="_1al0wlf"]').click()
         browser.element('//span[text()="Сохранить"]').should(be.visible).click()
         return self
 
