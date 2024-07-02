@@ -1,7 +1,7 @@
-<p align="left">
+<p align="center">
   <a href="https://2gis.ru">
   <picture>
-<img alt="2gis" src="https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-znachok-dva-gis-na-prozrachnom-fone-10.png" width="600" height="150">
+<img alt="2gis" src="https://gas-kvas.com/grafic/uploads/posts/2024-01/gas-kvas-com-p-znachok-dva-gis-na-prozrachnom-fone-10.png" width="500" height="150">
     </picture>
   </a>
 </p>
