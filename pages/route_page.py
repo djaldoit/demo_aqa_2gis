@@ -17,7 +17,7 @@ class RoutePage:
 
     @allure.step('Finding route')
     def finding_route(self):
-        browser.element('//span[text()="Проехать"]').assure(visible, timeout=15).click()
+        browser.element('//span[text()="Проехать"]').click()
         return self
 
     @allure.step('Checking route')

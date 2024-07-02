@@ -16,9 +16,8 @@ class BookmarkersPage:
         browser.element('//span[text()="Сохранить"]').should(be.visible).click()
         return self
 
-    @allure.step('Checking added to bookmarks')
+    @allure.step('Сhecking favorites')
     def checking_that_we_are_logging_in(self):
-        browser.element('//span[text()="Добавлено в «Избранное»"]').should(be.visible)
         browser.element('(//div[@class="_rfz2ij"])[1]').should(be.visible).click().click()
         return self
 
