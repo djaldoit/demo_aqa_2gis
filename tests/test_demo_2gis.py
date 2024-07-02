@@ -12,6 +12,7 @@ class TestDemo2Gis:
     @allure.title('Checking route')
     def test_route(self):
         route_page = RoutePage()
+        route_page.browser_open()
         time.sleep(3)
         route_page.searching_for_route()
         route_page.finding_route()
@@ -21,7 +22,6 @@ class TestDemo2Gis:
     @allure.title('Checking account log in')
     def test_checking_account_log_in(self):
         log_in_page = LogInPage()
-        log_in_page.browser_open()
         log_in_page.click_on_log_in()
         log_in_page.click_on_email_sign_in()
         log_in_page.login_in()
