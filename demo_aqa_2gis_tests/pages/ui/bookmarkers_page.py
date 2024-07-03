@@ -1,8 +1,6 @@
 import allure
 from selene import browser, be
 
-from data import Urls
-
 
 class BookmarkersPage:
 
@@ -27,3 +25,6 @@ class BookmarkersPage:
         browser.element('(//div[@class="_mkajyk"])[1]').click()
         browser.element('//button[text()="Сохранить"]').click()
         browser.element('//span[text()="Сохранить"]').should(be.visible)
+
+
+bookmarkers_page = BookmarkersPage()

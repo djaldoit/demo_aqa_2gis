@@ -1,7 +1,6 @@
 import allure
 from selene import be, browser
-
-from data import User, Urls
+from test_data.data import User, Urls
 
 
 class LogInPage:
@@ -28,7 +27,7 @@ class LogInPage:
         browser.element('//button[@type="submit"]').click()
         return self
 
-    @allure.step('Потверждение входа')
+    @allure.step('Подтверждение входа')
     def confirm_that_we_are_logged_in(self):
         browser.element('//button[text()="Подтверждаю"]').should(be.visible).double_click()
         return self
@@ -37,3 +36,6 @@ class LogInPage:
     def checking_that_we_are_logging_in(self):
         browser.element('//div[@class="_1dk5lq4"]').should(be.visible)
         return self
+
+
+login_page = LogInPage()

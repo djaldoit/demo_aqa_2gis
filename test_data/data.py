@@ -1,4 +1,3 @@
-
 class Urls:
     @staticmethod
     def main_url():

@@ -1,8 +1,6 @@
 import allure
-from selene import browser, have, be
-from selene.support.conditions.be import visible
-
-from data import Urls
+from selene import browser, be
+from test_data.data import Urls
 
 
 class RoutePage:
@@ -30,3 +28,6 @@ class RoutePage:
     def checking_distance(self):
         browser.element('//div[@class="_sgs1pz"]').should(be.visible)
         return self
+
+
+route_page = RoutePage()

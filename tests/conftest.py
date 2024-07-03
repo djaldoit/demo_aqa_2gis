@@ -2,11 +2,11 @@ import os
 
 import pytest
 from selenium import webdriver
-
 from dotenv import load_dotenv
 from selene import browser
 from selenium.webdriver.chrome.options import Options
-from utils import attachments
+from demo_aqa_2gis_tests.utils import attachments
+
 
 DEFAULT_BROWSER_VERSION = "122.0"
 
@@ -21,7 +21,7 @@ def load_env():
     load_dotenv()
 
 
-@pytest.fixture(scope='function',  autouse=True)
+@pytest.fixture(scope='function', autouse=True)
 def setup_browser(request):
     browser_version = request.config.getoption('--browser_version')
     browser_version = browser_version if browser_version != "" else DEFAULT_BROWSER_VERSION
@@ -48,7 +48,6 @@ def setup_browser(request):
 
     browser.config.driver = driver
 
-    browser.config.timeout = 20.0
     browser.config.window_width = 1920
     browser.config.window_height = 1080
 

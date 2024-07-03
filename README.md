@@ -15,15 +15,43 @@
 
 ## Используемые инструменты в проекте
 <img title="Python" src="resources/icons/python.svg" height="30" width="30"/> <img title="Jenkins" src="resources/icons/selene.png" height="30" width="30"/>  <img title="Pytest" src="resources/icons/pytest.svg" height="40" width="40"/> <img title="Allure Report" src="resources/icons/allure-report.png" height="40" width="40"/> <img title="Selenoid" src="resources/icons/selenoid.png" height="40" width="40"/> <img title="Jenkins" src="resources/icons/jenkins.svg" height="40" width="40"/> <img title="GitHub" src="resources/icons/github.svg" height="40" width="40"/> <img title="Pycharm" src="resources/icons/pycharm.png" height="40" width="40"/> <img title="Telegram" src="resources/icons/telegram.png" height="40" width="40"/> 
+----
+----
+<details>
+<summary><span style="font-size:1.8em;"><b>Структура проекта</b></span></summary>
+
+``` 
+demo_aqa_2gis_tests - Основной каталог модулей
+resources           - Каталог с ресурсами(конки, скриншоты, gif)
+test_data           - Каталог с тестовыми данными для тестов
+tests               - Каталог с тестами
+pytest.ini          - Файл с настройками тестирования
+requirements.txt    - Файл с требованиями к проекту
+```
+</details>
+
+----
+
+## Список проверок:
+- :white_check_mark: Проверка входа в аккаунт
+- :white_check_mark: Добавление в избранное
+- :white_check_mark: Удаление из избранного 
+- :white_check_mark: Проверка добавления аватара
+- :white_check_mark: Проверка построение маршрута
+
+
+
+
+
 
 ----
 ### Локальный запуск
 > Для локального запуска с дефолтными значениями необходимо выполнить команду:
-### 1. Склонировать репозиторий
+#### 1. Склонировать репозиторий
 ```
 git clone https://github.com/djaldoit/demo_aqa_2gis.git
 ```
-### 2. Запуск
+#### 2. Запуск
 ```
 python -m venv .venv
 source .venv/bin/activate
@@ -50,7 +78,7 @@ pytest tests
 6. Результат запуска сборки можно посмотреть в отчёте Allure
 
 ----
-### Allure отчет
+### Allure отчет UI-тестов
 
 
 <details><summary>Общие результаты</summary>

@@ -1,10 +1,8 @@
 import os
 import random
-
 import allure
 from selene import browser, be
-
-from data import Urls
+from test_data.data import Urls
 
 
 class AvatarPage:
@@ -26,10 +24,14 @@ class AvatarPage:
     @allure.step('Upload avatar')
     def upload_avatar(self):
         browser.element('//input[@id="avatar-uploader"]').send_keys(os.path.abspath(
-            os.path.abspath(os.path.join(os.getcwd(), f'tests/pictures/{random.choice(["avatar.jpg", "avatar2.jpg"])}'))))
+            os.path.abspath(os.path.join(os.getcwd(), f'../test_data/pictures/{random.choice(
+                ["avatar.jpg", "avatar2.jpg"])}'))))
         return self
 
     @allure.step('Save settings')
     def save_avatar(self):
         browser.element('//button[text()="Сохранить"]').should(be.visible).click()
         return self
+
+
+avatar_page = AvatarPage()
