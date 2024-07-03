@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://2gis.ru">
     <picture>
-      <img alt="2gis" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/2GIS_logo.svg" width="400" height="120">
+      <img alt="2gis" src="https://upload.wikimedia.org/wikipedia/ru/7/77/Логотип_2ГИС.svg" width="400" height="120">
     </picture>
   </a>
 </p>
