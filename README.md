@@ -33,11 +33,12 @@ requirements.txt    - Файл с требованиями к проекту
 ----
 
 ## Список проверок:
-- :white_check_mark: Проверка входа в аккаунт
-- :white_check_mark: Добавление в избранное
-- :white_check_mark: Удаление из избранного 
-- :white_check_mark: Проверка добавления аватара
-- :white_check_mark: Проверка построение маршрута
+* UI Тесты
+    - :white_check_mark: Проверка входа в аккаунт
+    - :white_check_mark: Добавление в избранное
+    - :white_check_mark: Удаление из избранного 
+    - :white_check_mark: Проверка добавления аватара
+    - :white_check_mark: Проверка построение маршрута
 
 
 
