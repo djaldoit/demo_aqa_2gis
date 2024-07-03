@@ -6,7 +6,7 @@ from demo_aqa_2gis_tests.pages.ui.log_in_page import login_page
 
 @allure.suite('Вход в аккаунт')
 @allure.title('Проверка входа в аккаунт')
-@pytest.fixture(scope='function')
+@pytest.fixture
 def test_checking_account_log_in():
     login_page.browser_open()
     login_page.click_on_log_in()
