@@ -1,5 +1,5 @@
 import allure
-from demo_aqa_2gis_tests.pages.ui import route_page
+from demo_aqa_2gis_tests.pages.ui.route_page import route_page
 
 
 @allure.suite('Построение маршрута')
