@@ -5,14 +5,14 @@ class Urls:
 
     @staticmethod
     def pc_version():
-        return ("https://info.2gis.ru/vladimir/products/"
-                "download?utm_source=online&utm_medium=product&utm_campaign=sidebar")
+        return ("https://info.2gis.ru/moscow/products/download?utm_"
+                "source=online&utm_medium=product&utm_campaign=sidebar")
 
     @staticmethod
     def android_version():
         return ("https://play.google.com/store/apps/details?id=ru."
                 "dublgis.dgismobile&af_ss_ver=2_7_2&af_ss_ui=true&c=sideMenu&pid="
-                "online&deep_link_value=dgis%3A%2F%2F2gis.ru%2Fvladimir&af_sub4=online&af_js_web=true&af_sub5=sideMenu")
+                "online&deep_link_value=dgis%3A%2F%2F2gis.ru%2F&af_sub4=online&af_js_web=true&af_sub5=sideMenu")
 
     @staticmethod
     def ios_version():
