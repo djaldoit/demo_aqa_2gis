@@ -14,7 +14,7 @@
 2GIS (2 ГИС) – бесплатное программное обеспечение, предназначенное для навигации по городу. В приложении имеется подробное описание для каждой организации, включающее в себя адрес, телефон, детальную информацию и маршрут проезда. Карты некоторых городов выполнены в 3D и имеют условные обозначения для удобного поиска.
 
 ## Используемые инструменты в проекте
-<img title="Python" src="resources/icons/python.svg" height="30" width="30"/> <img title="Jenkins" src="resources/icons/selene.png" height="30" width="30"/>  <img title="Pytest" src="resources/icons/pytest.svg" height="40" width="40"/> <img title="Allure Report" src="resources/icons/allure-report.png" height="40" width="40"/> <img title="Selenoid" src="resources/icons/selenoid.png" height="40" width="40"/> <img title="Jenkins" src="resources/icons/jenkins.svg" height="40" width="40"/> <img title="GitHub" src="resources/icons/github.svg" height="40" width="40"/> <img title="Pycharm" src="resources/icons/pycharm.png" height="40" width="40"/> <img title="Telegram" src="resources/icons/telegram.png" height="40" width="40"/> 
+<img title="Python" src="resources/icons/python.svg" height="30" width="30"/> <img title="Selene" src="resources/icons/selene.png" height="30" width="30"/>  <img title="Pytest" src="resources/icons/pytest.svg" height="40" width="40"/> <img title="Allure Report" src="resources/icons/allure-report.png" height="40" width="40"/> <img title="Selenoid" src="resources/icons/selenoid.png" height="40" width="40"/> <img title="Jenkins" src="resources/icons/jenkins.svg" height="40" width="40"/> <img title="GitHub" src="resources/icons/github.svg" height="40" width="40"/> <img title="Pycharm" src="resources/icons/pycharm.png" height="40" width="40"/> <img title="Telegram" src="resources/icons/telegram.png" height="40" width="40"/> 
 ----
 ----
 <details>
@@ -40,7 +40,7 @@ requirements.txt    - Файл с требованиями к проекту
     - :white_check_mark: Проверка построение маршрута
 
 ----
-### Локальный запуск
+### <img title="Jenkins" src="https://e7.pngegg.com/pngimages/578/441/png-clipart-computer-icons-intranet-computer-network-technical-support-network-computer-network-text.png" height="40" width="40"/> Локальный запуск
 > Для локального запуска с дефолтными значениями необходимо выполнить команду:
 #### 1. Склонировать репозиторий
 ```
@@ -55,7 +55,7 @@ pytest tests
 ```
 
 ----
-### Удаленный запуск автотестов выполняется на сервере Jenkins
+### <img title="Jenkins" src="resources/icons/jenkins.svg" height="40" width="40"/> Удаленный запуск автотестов выполняется на сервере Jenkins
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/demo_2gis/">Ссылка на проект в Jenkins</a>
 
 #### Параметры сборки
@@ -63,7 +63,7 @@ pytest tests
 * `comment` - комментарий
 
 
-#### Для запуска автотестов в Jenkins
+####  Для запуска автотестов в Jenkins
 
 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/demo_2gis/">проект</a>
 2. Выбрать пункт `Build with Parameters`
@@ -73,7 +73,7 @@ pytest tests
 6. Результат запуска сборки можно посмотреть в отчёте Allure
 
 ----
-### Allure отчет UI-тестов
+### <img title="Allure Report" src="resources/icons/allure-report.png" height="40" width="40"/> Allure отчет UI-тестов
 
 
 <details><summary>Общие результаты</summary>
