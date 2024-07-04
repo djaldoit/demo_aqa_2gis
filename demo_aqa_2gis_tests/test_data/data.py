@@ -7,6 +7,7 @@ class Urls:
     def pc_version():
         return ("https://info.2gis.ru/vladimir/products/"
                 "download?utm_source=online&utm_medium=product&utm_campaign=sidebar")
+
     @staticmethod
     def android_version():
         return ("https://play.google.com/store/apps/details?id=ru."

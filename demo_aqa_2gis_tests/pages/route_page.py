@@ -1,3 +1,5 @@
+import time
+
 import allure
 from selene import browser, be
 from demo_aqa_2gis_tests.test_data.data import Urls
@@ -11,8 +13,10 @@ class RoutePage:
 
     @allure.step('Поиск маршрута')
     def searching_for_route(self):
-        browser.element('//input[@placeholder="Поиск в 2ГИС"]').should(be.visible).type(
-            'Московский Кремль').press_enter().press_enter().press_enter()
+        browser.element('//input[@placeholder="Поиск в 2ГИС"]').should(be.visible).click().type(
+            'Московский Кремль').press_enter()
+        browser.element('(//span[text()="Московский Кремль"])[1]').should(be.visible).click()
+        return self
 
     @allure.step('Клик по маршруту')
     def finding_route(self):
