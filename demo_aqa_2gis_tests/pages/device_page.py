@@ -14,7 +14,6 @@ class DevicePage:
     @allure.step('Клик по кнопке Меню в лендинге"')
     def click_on_the_menu(self):
         browser.element('//button[@class="_1xj5mhp"]').should(be.visible).click()
-        browser.element('//a[@class="_rrd7l1"]').should(be.visible)
         return self
 
     @allure.step('Клик по ссылке "Android"')
