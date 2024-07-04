@@ -31,7 +31,7 @@ def setup_browser(request):
     browser_version = request.config.getoption('--browser_version')
     browser_version = browser_version if browser_version != "" else DEFAULT_BROWSER_VERSION
     options = Options()
-    options.page_load_strategy = 'eager'
+
     selenoid_capabilities = {
         "browserName": "chrome",
         "browserVersion": browser_version,
