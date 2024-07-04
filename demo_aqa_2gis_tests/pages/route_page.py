@@ -1,6 +1,6 @@
 import allure
 from selene import browser, be
-from test_data.data import Urls
+from demo_aqa_2gis_tests.test_data.data import Urls
 
 
 class RoutePage:

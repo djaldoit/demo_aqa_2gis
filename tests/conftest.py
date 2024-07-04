@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from selene import browser
 from selenium.webdriver.chrome.options import Options
 from demo_aqa_2gis_tests.utils import attachments
-
+from tests.test_log_in import test_checking_account_log_in
 
 DEFAULT_BROWSER_VERSION = "122.0"
 
@@ -19,6 +19,11 @@ def pytest_addoption(parser):
 @pytest.fixture(scope='session', autouse=True)
 def load_env():
     load_dotenv()
+
+
+@pytest.fixture
+def account_login():
+    return test_checking_account_log_in()
 
 
 @pytest.fixture(scope='function', autouse=True)
@@ -47,7 +52,6 @@ def setup_browser(request):
     )
 
     browser.config.driver = driver
-
     browser.config.window_width = 1920
     browser.config.window_height = 1080
 

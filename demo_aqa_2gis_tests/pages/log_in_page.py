@@ -1,6 +1,6 @@
 import allure
 from selene import be, browser
-from test_data.data import User, Urls
+from demo_aqa_2gis_tests.test_data.data import User, Urls
 
 
 class LogInPage:
