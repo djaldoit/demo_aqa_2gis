@@ -1,5 +1,3 @@
-import time
-
 import allure
 from selene import browser, be
 from demo_aqa_2gis_tests.test_data.data import Urls
